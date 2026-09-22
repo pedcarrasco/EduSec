@@ -1,7 +1,6 @@
 import express, { Request, Response } from 'express';
-import { db } from './db';
+import { db } from './db.js';
 import { EventSeverity, EventType, UserRole } from '../src/types';
-
 const SERVER_START_TIME = Date.now();
 
 function getClientInfo(req: Request) {
@@ -911,8 +910,7 @@ app.use((req, _res, next) => {
 
     return res.json({ user: updated });
   });
-
-  // ----------------------------------------------------
+// ----------------------------------------------------
   // 5. SOC TELEMETRÍA, SIEM EXPORT & SIMULADOR DE PRUEBAS
   // ----------------------------------------------------
 
