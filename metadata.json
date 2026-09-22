@@ -1,0 +1,6 @@
+{
+  "name": "EduSec - Plataforma de Cursos & Telemetría SOC",
+  "description": "Plataforma de cursos con gestión de profesores, alumnos, inscripciones, progreso, API REST y auditoría para SOC de eventos críticos (login, cambio de contraseña, inscripción y modificación de cursos).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

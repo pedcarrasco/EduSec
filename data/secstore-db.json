@@ -1,0 +1,348 @@
+{
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Hardware Firewall UTM 10Gbps",
+      "category": "Seguridad de Red",
+      "price": 1850,
+      "stock": 14,
+      "minStockAlert": 5,
+      "sku": "SEC-FW-10G",
+      "description": "Appliance de inspección profunda de paquetes con IPS/IDS integrado, VPN IPsec y filtrado DNS.",
+      "badge": "Empresarial",
+      "specs": [
+        "Throughput: 10 Gbps",
+        "Puertos: 4x SFP+ 10G",
+        "Licencia IDS/IPS activa",
+        "Rackeable 1U"
+      ]
+    },
+    {
+      "id": "prod-2",
+      "name": "Llave de Seguridad YubiKey FIDO2 / U2F",
+      "category": "Criptografía & Auth",
+      "price": 65,
+      "stock": 85,
+      "minStockAlert": 15,
+      "sku": "AUTH-FIDO-5NFC",
+      "description": "Token de autenticación de dos factores resistente a phishing con conectividad USB-C y NFC.",
+      "badge": "Más Vendido",
+      "specs": [
+        "Protocolo: WebAuthn, FIDO2, OTP",
+        "Carcasa IP68 reforzada",
+        "Soporte PIV Smart Card",
+        "NFC & Type-C"
+      ]
+    },
+    {
+      "id": "prod-3",
+      "name": "Switch Gestionado L3 24x PoE+ & 4x 10G",
+      "category": "Infraestructura",
+      "price": 940,
+      "stock": 8,
+      "minStockAlert": 3,
+      "sku": "NET-SW-L3-24P",
+      "description": "Switch de capa 3 con enrutamiento dinámico, soporte 802.1X, DAI, DHCP Snooping y Syslog remoto.",
+      "badge": "PoE+ 370W",
+      "specs": [
+        "24 puertos Gigabit PoE+",
+        "4x Uplinks 10Gb SFP+",
+        "VLANs privadas & ACLs L2-L4",
+        "SNMPv3 & SSHv2"
+      ]
+    },
+    {
+      "id": "prod-4",
+      "name": "Módulo HSM Criptográfico PCIe",
+      "category": "Criptografía & Auth",
+      "price": 3400,
+      "stock": 4,
+      "minStockAlert": 2,
+      "sku": "CRPT-HSM-PCIE",
+      "description": "Módulo de seguridad de hardware certificado FIPS 140-2 Nivel 3 para custodia y firma de claves.",
+      "badge": "FIPS 140-2",
+      "specs": [
+        "Certificación FIPS 140-2 Nivel 3",
+        "Generador RNG cuántico",
+        "Zeroization tamper-detect",
+        "Interfaz PCIe Gen3"
+      ]
+    },
+    {
+      "id": "prod-5",
+      "name": "Sensor TAP de Red Pasivo de Fibra Óptica",
+      "category": "Monitoreo SOC",
+      "price": 480,
+      "stock": 19,
+      "minStockAlert": 5,
+      "sku": "SOC-TAP-FIB-1G",
+      "description": "Dispositivo TAP pasivo no intrusivo para duplicación limpia de tráfico hacia sensores de SOC/IDS.",
+      "badge": "Zero-Latency",
+      "specs": [
+        "Split Ratio 50/50",
+        "Sin consumo eléctrico",
+        "Inmune a ciberataques",
+        "Compatible con Zeek/Suricata"
+      ]
+    },
+    {
+      "id": "prod-6",
+      "name": "Servidor Bare-Metal 2U 64-Core 256GB RAM",
+      "category": "Infraestructura",
+      "price": 5200,
+      "stock": 3,
+      "minStockAlert": 2,
+      "sku": "SRV-BM-2U-EPYC",
+      "description": "Nodo de virtualización y análisis SIEM con discos NVMe RAID 10 y fuentes redundantes de 1200W.",
+      "badge": "Alto Rendimiento",
+      "specs": [
+        "CPU AMD EPYC 64 Cores",
+        "256 GB ECC DDR5",
+        "4x 3.84TB Enterprise NVMe",
+        "Doble PSU redundante"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "Administrador de Seguridad",
+      "email": "admin@secstore.local",
+      "passwordHash": "admin123",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-01-10T10:00:00Z",
+      "lastLogin": "2026-09-22T08:00:00Z",
+      "failedLoginCount": 0
+    },
+    {
+      "id": "usr-auditor",
+      "name": "Auditor SOC L2",
+      "email": "auditor@secstore.local",
+      "passwordHash": "soc2026!",
+      "role": "soc_auditor",
+      "status": "active",
+      "createdAt": "2026-02-15T11:20:00Z",
+      "lastLogin": "2026-09-22T08:15:00Z",
+      "failedLoginCount": 0
+    },
+    {
+      "id": "usr-customer-1",
+      "name": "Carlos Mendoza",
+      "email": "carlos@cliente.local",
+      "passwordHash": "cliente123",
+      "role": "customer",
+      "status": "active",
+      "createdAt": "2026-03-01T14:30:00Z",
+      "lastLogin": "2026-09-21T18:40:00Z",
+      "failedLoginCount": 1
+    },
+    {
+      "id": "usr-support",
+      "name": "Ana Soporte",
+      "email": "ana@soporte.local",
+      "passwordHash": "soporte123",
+      "role": "support",
+      "status": "active",
+      "createdAt": "2026-04-12T09:00:00Z",
+      "lastLogin": "2026-09-22T07:45:00Z",
+      "failedLoginCount": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-2026-8901",
+      "customerEmail": "carlos@cliente.local",
+      "customerName": "Carlos Mendoza",
+      "shippingAddress": {
+        "fullName": "Carlos Mendoza",
+        "street": "Av. Las Ciber-Torres 402, Edificio B",
+        "city": "Santiago",
+        "country": "Chile",
+        "phone": "+56 9 8765 4321"
+      },
+      "items": [
+        {
+          "productId": "prod-2",
+          "productName": "Llave de Seguridad YubiKey FIDO2 / U2F",
+          "quantity": 2,
+          "unitPrice": 65,
+          "totalPrice": 130
+        },
+        {
+          "productId": "prod-5",
+          "productName": "Sensor TAP de Red Pasivo de Fibra Óptica",
+          "quantity": 1,
+          "unitPrice": 480,
+          "totalPrice": 480
+        }
+      ],
+      "totalAmount": 610,
+      "status": "processing",
+      "paymentMethod": "Transferencia Bancaria Verificada",
+      "createdAt": "2026-09-21T19:00:00Z",
+      "updatedAt": "2026-09-21T19:00:00Z",
+      "notes": "Despacho prioritario solicitado por el cliente"
+    },
+    {
+      "id": "ORD-2026-8894",
+      "customerEmail": "admin@secstore.local",
+      "customerName": "Laboratorio Central SOC",
+      "shippingAddress": {
+        "fullName": "Operaciones de Ciberseguridad",
+        "street": "Parque Tecnológico #1200",
+        "city": "Valparaíso",
+        "country": "Chile",
+        "phone": "+56 9 1234 5678"
+      },
+      "items": [
+        {
+          "productId": "prod-1",
+          "productName": "Hardware Firewall UTM 10Gbps",
+          "quantity": 1,
+          "unitPrice": 1850,
+          "totalPrice": 1850
+        }
+      ],
+      "totalAmount": 1850,
+      "status": "delivered",
+      "paymentMethod": "Orden de Compra Corporativa",
+      "createdAt": "2026-09-18T14:20:00Z",
+      "updatedAt": "2026-09-20T11:00:00Z",
+      "notes": "Entregado en rack sala de servidores"
+    }
+  ],
+  "events": [
+    {
+      "id": "SEC-EVT-MUCU5ETR-826",
+      "timestamp": "2026-09-22T15:35:15.279Z",
+      "eventType": "LOGIN_FAILED",
+      "severity": "LOW",
+      "sourceIp": "127.0.0.1",
+      "userAgent": "curl/7.88.1",
+      "endpoint": "/api/auth/login",
+      "httpMethod": "POST",
+      "httpStatus": 401,
+      "actor": {
+        "email": "carlos@cliente.local"
+      },
+      "target": {
+        "type": "AUTH_SERVICE",
+        "name": "User Authentication Portal"
+      },
+      "action": "Intento de inicio de sesión fallido para [carlos@cliente.local]",
+      "outcome": "FAILURE",
+      "details": {
+        "attemptedEmail": "carlos@cliente.local",
+        "consecutiveFailures": 1,
+        "userExists": true,
+        "accountLocked": false
+      },
+      "mitreAttack": {
+        "techniqueId": "T1110.001",
+        "techniqueName": "Brute Force: Password Guessing",
+        "tactic": "Credential Access"
+      }
+    },
+    {
+      "id": "SEC-EVT-001",
+      "timestamp": "2026-09-22T06:30:15Z",
+      "eventType": "ACCOUNT_CREATED",
+      "severity": "LOW",
+      "sourceIp": "190.160.45.12",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/128.0",
+      "endpoint": "/api/auth/register",
+      "httpMethod": "POST",
+      "httpStatus": 201,
+      "actor": {
+        "email": "carlos@cliente.local",
+        "role": "customer"
+      },
+      "target": {
+        "type": "USER",
+        "name": "carlos@cliente.local"
+      },
+      "action": "Creación de nueva cuenta de cliente",
+      "outcome": "SUCCESS",
+      "details": {
+        "email": "carlos@cliente.local",
+        "registrationMethod": "Web Portal",
+        "requiresMFA": false
+      },
+      "mitreAttack": {
+        "techniqueId": "T1136.001",
+        "techniqueName": "Create Account: Local Account",
+        "tactic": "Persistence"
+      }
+    },
+    {
+      "id": "SEC-EVT-002",
+      "timestamp": "2026-09-22T07:15:22Z",
+      "eventType": "LOGIN_FAILED",
+      "severity": "LOW",
+      "sourceIp": "185.220.101.5",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "endpoint": "/api/auth/login",
+      "httpMethod": "POST",
+      "httpStatus": 401,
+      "actor": {
+        "email": "admin@secstore.local"
+      },
+      "target": {
+        "type": "AUTH_SERVICE",
+        "name": "Local Credentials DB"
+      },
+      "action": "Intento de login fallido - Contraseña errónea",
+      "outcome": "FAILURE",
+      "details": {
+        "email": "admin@secstore.local",
+        "failureReason": "Invalid credentials",
+        "consecutiveFailures": 1
+      },
+      "mitreAttack": {
+        "techniqueId": "T1110.001",
+        "techniqueName": "Brute Force: Password Guessing",
+        "tactic": "Credential Access"
+      }
+    },
+    {
+      "id": "SEC-EVT-003",
+      "timestamp": "2026-09-22T08:00:00Z",
+      "eventType": "LOGIN_SUCCESS",
+      "severity": "INFO",
+      "sourceIp": "192.168.1.105",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/129.0",
+      "endpoint": "/api/auth/login",
+      "httpMethod": "POST",
+      "httpStatus": 200,
+      "actor": {
+        "id": "usr-admin",
+        "email": "admin@secstore.local",
+        "role": "admin"
+      },
+      "target": {
+        "type": "AUTH_SESSION",
+        "name": "Session-Admin-Privileged"
+      },
+      "action": "Inicio de sesión de Administrador exitoso",
+      "outcome": "SUCCESS",
+      "details": {
+        "email": "admin@secstore.local",
+        "role": "admin",
+        "sessionExpiry": "8h"
+      },
+      "mitreAttack": {
+        "techniqueId": "T1078.003",
+        "techniqueName": "Valid Accounts: Local Accounts",
+        "tactic": "Initial Access / Defense Evasion"
+      }
+    }
+  ],
+  "webhookConfig": {
+    "url": "",
+    "enabled": false,
+    "format": "json",
+    "minSeverity": "LOW",
+    "lastTestStatus": "NONE"
+  }
+}
